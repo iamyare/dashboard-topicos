@@ -27,7 +27,7 @@ function CheckTable(props: { tableData: any }) {
     columnHelper.accessor('name', {
       id: 'name',
       header: () => (
-        <p className="text-sm font-bold text-gray-600 dark:text-white">PRODUCTO</p>
+        <p className="text-sm font-bold text-gray-600 dark:text-white">PROYECTO</p>
       ),
       cell: (info: any) => (
         <div className="flex items-center">

@@ -13,20 +13,19 @@ const TaskCard = () => {
             <MdCheckCircle className="h-6 w-6 text-brand-500 dark:text-white" />
           </div>
           <h4 className="ml-4 text-xl font-bold text-navy-700 dark:text-white">
-            Tareas Pendientes
+            Actividades del Sprint
           </h4>
         </div>
         <CardMenu />
       </div>
 
       {/* task content */}
-
       <div className="h-full w-full">
         <div className="mt-5 flex items-center justify-between p-2">
           <div className="flex items-center justify-center gap-2">
             <Checkbox />
             <p className="text-base font-bold text-navy-700 dark:text-white">
-              Actualizar Inventario Mensual
+              Implementar Autenticación JWT
             </p>
           </div>
           <div>
@@ -38,7 +37,7 @@ const TaskCard = () => {
           <div className="flex items-center justify-center gap-2">
             <Checkbox />
             <p className="text-base font-bold text-navy-700 dark:text-white">
-              Realizar Reporte de Ventas
+              Diseñar Responsive Dashboard
             </p>
           </div>
           <div>
@@ -50,7 +49,7 @@ const TaskCard = () => {
           <div className="flex items-center justify-center gap-2">
             <Checkbox />
             <p className="text-base font-bold text-navy-700 dark:text-white">
-              Planificar Reunión con Proveedores
+              Optimizar Consultas SQL
             </p>
           </div>
           <div>
@@ -62,7 +61,7 @@ const TaskCard = () => {
           <div className="flex items-center justify-center gap-2">
             <Checkbox />
             <p className="text-base font-bold text-navy-700 dark:text-white">
-              Revisar Control de Calidad
+              Crear Tests Unitarios
             </p>
           </div>
           <div>
@@ -74,7 +73,7 @@ const TaskCard = () => {
           <div className="flex items-center justify-center gap-2">
             <Checkbox />
             <p className="text-base font-bold text-navy-700 dark:text-white">
-              Actualizar Precios del Catálogo
+              Configurar Pipeline CI/CD
             </p>
           </div>
           <div>

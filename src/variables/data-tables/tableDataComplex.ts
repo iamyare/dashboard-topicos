@@ -7,31 +7,31 @@ type RowObj = {
 
 const tableDataComplex: RowObj[] = [
   {
-    name: 'E-commerce Platform',
+    name: 'Sistema de Gestión Hospitalaria',
     status: 'Aprobado',
     date: '02 Dic 2025',
-    progress: 75.5,
+    progress: 85,
   },
   {
-    name: 'Sistema de Gestión CRM',
+    name: 'Plataforma E-learning Universidad',
     status: 'En Revisión',
     date: '01 Dic 2025',
-    progress: 35.4,
+    progress: 45,
   },
   {
-    name: 'Aplicación Móvil',
+    name: 'Aplicación de Control de Inventario',
     status: 'Aprobado',
     date: '30 Nov 2025',
-    progress: 25,
+    progress: 65,
   },
   {
-    name: 'Portal Educativo',
+    name: 'Plataforma de Recursos Humanos',
     status: 'Pausado',
     date: '29 Nov 2025',
-    progress: 85.7,
+    progress: 30,
   },
   {
-    name: 'Dashboard Analytics',
+    name: 'Sistema de Facturación Electrónica',
     status: 'Aprobado',
     date: '28 Nov 2025',
     progress: 90,
