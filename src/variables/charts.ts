@@ -29,7 +29,7 @@ export const barChartOptionsDailyTraffic: ApexGeneric = {
     theme: 'dark',
   },
   xaxis: {
-    categories: ['00', '04', '08', '12', '14', '16', '18'],
+    categories: ['9AM', '11AM', '1PM', '3PM', '5PM', '7PM', '9PM'],
     show: false,
     labels: {
       show: true,
@@ -148,18 +148,18 @@ export const pieChartData = [40, 35, 25];
 
 export const barChartDataWeeklyRevenue = [
   {
-    name: 'Ventas en Línea',
-    data: [24500, 22700, 20300, 23900, 19200, 21500, 22600, 19200, 23800],
-    color: '#6AD2Fa',
-  },
-  {
-    name: 'Ventas en Tienda',
-    data: [18400, 17700, 15300, 19900, 15200, 17500, 18600, 15200, 19800],
+    name: 'Desarrollo Frontend',
+    data: [32500, 28700, 31200],
     color: '#4318FF',
   },
   {
-    name: 'Servicios',
-    data: [12400, 11700, 10300, 12900, 10200, 11500, 12600, 10200, 12800],
+    name: 'Desarrollo Backend',
+    data: [25800, 29400, 27600],
+    color: '#6AD2FF',
+  },
+  {
+    name: 'Consultoría',
+    data: [18400, 21200, 19800],
     color: '#EFF4FB',
   },
 ];
@@ -171,7 +171,6 @@ export const barChartOptionsWeeklyRevenue = {
       show: false,
     },
   },
-  // colors:['#ff3322','#faf']
   tooltip: {
     style: {
       fontSize: '12px',
@@ -187,7 +186,7 @@ export const barChartOptionsWeeklyRevenue = {
     },
   },
   xaxis: {
-    categories: ['17', '18', '19', '20', '21', '22', '23', '24', '25'],
+    categories: ['Semana 1', 'Semana 2', 'Semana 3'],
     show: false,
     labels: {
       show: true,
@@ -214,9 +213,11 @@ export const barChartOptionsWeeklyRevenue = {
         fontSize: '14px',
         fontWeight: '500',
       },
+      formatter: function (value: number) {
+        return `L. ${value.toLocaleString()}`;
+      },
     },
   },
-
   grid: {
     borderColor: 'rgba(163, 174, 208, 0.3)',
     show: true,
@@ -237,12 +238,12 @@ export const barChartOptionsWeeklyRevenue = {
   },
   fill: {
     type: 'solid',
-    colors: ['#5E37FF', '#6AD2FF', '#E1E9F8'],
+    colors: ['#4318FF', '#6AD2FF', '#EFF4FB'],
   },
   legend: {
     show: false,
   },
-  colors: ['#5E37FF', '#6AD2FF', '#E1E9F8'],
+  colors: ['#4318FF', '#6AD2FF', '#EFF4FB'],
   dataLabels: {
     enabled: false,
   },
@@ -256,13 +257,13 @@ export const barChartOptionsWeeklyRevenue = {
 
 export const lineChartDataTotalSpent = [
   {
-    name: 'Ingresos',
-    data: [850000, 964000, 748000, 866000, 749000, 868000],
+    name: 'Inversión Backend',
+    data: [380000, 425300, 395000, 415000, 385000, 425300],
     color: '#4318FF',
   },
   {
-    name: 'Ganancias',
-    data: [430000, 540000, 324000, 446000, 320000, 446000],
+    name: 'Inversión Frontend',
+    data: [280000, 325800, 295000, 315000, 285000, 325800],
     color: '#6AD2FF',
   },
 ];
@@ -277,7 +278,6 @@ export const lineChartOptionsTotalSpent = {
   },
   chart: {
     type: 'line',
-
     toolbar: {
       show: false,
     },
@@ -320,7 +320,7 @@ export const lineChartOptionsTotalSpent = {
     },
     type: 'text',
     range: undefined,
-    categories: ['SEP', 'OCT', 'NOV', 'DEC', 'JAN', 'FEB'],
+    categories: ['JUL', 'AGO', 'SEP', 'OCT', 'NOV', 'DIC'],
   },
 
   yaxis: {
