@@ -22,7 +22,6 @@ type RowObj = {
 
 const columnHelper = createColumnHelper<RowObj>();
 
-// const columns = columnsDataCheck;
 export default function ComplexTable(props: { tableData: any }) {
   const { tableData } = props;
   const [sorting, setSorting] = React.useState<SortingState>([]);
@@ -31,7 +30,7 @@ export default function ComplexTable(props: { tableData: any }) {
     columnHelper.accessor("name", {
       id: "name",
       header: () => (
-        <p className="text-sm font-bold text-gray-600 dark:text-white">NAME</p>
+        <p className="text-sm font-bold text-gray-600 dark:text-white">PROYECTO</p>
       ),
       cell: (info) => (
         <p className="text-sm font-bold text-navy-700 dark:text-white">
@@ -43,16 +42,16 @@ export default function ComplexTable(props: { tableData: any }) {
       id: "status",
       header: () => (
         <p className="text-sm font-bold text-gray-600 dark:text-white">
-          STATUS
+          ESTADO
         </p>
       ),
       cell: (info) => (
         <div className="flex items-center">
-          {info.getValue() === "Approved" ? (
+          {info.getValue() === "Aprobado" ? (
             <MdCheckCircle className="text-green-500 me-1 dark:text-green-300" />
-          ) : info.getValue() === "Disable" ? (
+          ) : info.getValue() === "Pausado" ? (
             <MdCancel className="text-red-500 me-1 dark:text-red-300" />
-          ) : info.getValue() === "Error" ? (
+          ) : info.getValue() === "En Revisión" ? (
             <MdOutlineError className="text-amber-500 me-1 dark:text-amber-300" />
           ) : null}
           <p className="text-sm font-bold text-navy-700 dark:text-white">
@@ -64,7 +63,7 @@ export default function ComplexTable(props: { tableData: any }) {
     columnHelper.accessor("date", {
       id: "date",
       header: () => (
-        <p className="text-sm font-bold text-gray-600 dark:text-white">DATE</p>
+        <p className="text-sm font-bold text-gray-600 dark:text-white">FECHA</p>
       ),
       cell: (info) => (
         <p className="text-sm font-bold text-navy-700 dark:text-white">
@@ -76,7 +75,7 @@ export default function ComplexTable(props: { tableData: any }) {
       id: "progress",
       header: () => (
         <p className="text-sm font-bold text-gray-600 dark:text-white">
-          PROGRESS
+          PROGRESO
         </p>
       ),
       cell: (info) => (
@@ -85,7 +84,7 @@ export default function ComplexTable(props: { tableData: any }) {
         </div>
       ),
     }),
-  ]; // eslint-disable-next-line
+  ];
   const [data, setData] = React.useState(() => [...defaultData]);
   const table = useReactTable({
     data,
@@ -102,7 +101,7 @@ export default function ComplexTable(props: { tableData: any }) {
     <Card extra={"w-full h-full px-6 pb-6 sm:overflow-x-auto"}>
       <div className="relative flex items-center justify-between pt-4">
         <div className="text-xl font-bold text-navy-700 dark:text-white">
-          Complex Table
+          Estado de Proyectos
         </div>
         <CardMenu />
       </div>

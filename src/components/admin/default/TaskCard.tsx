@@ -13,7 +13,7 @@ const TaskCard = () => {
             <MdCheckCircle className="h-6 w-6 text-brand-500 dark:text-white" />
           </div>
           <h4 className="ml-4 text-xl font-bold text-navy-700 dark:text-white">
-            Tasks
+            Tareas Pendientes
           </h4>
         </div>
         <CardMenu />
@@ -26,7 +26,7 @@ const TaskCard = () => {
           <div className="flex items-center justify-center gap-2">
             <Checkbox />
             <p className="text-base font-bold text-navy-700 dark:text-white">
-              Landing Page Design
+              Actualizar Inventario Mensual
             </p>
           </div>
           <div>
@@ -38,7 +38,7 @@ const TaskCard = () => {
           <div className="flex items-center justify-center gap-2">
             <Checkbox />
             <p className="text-base font-bold text-navy-700 dark:text-white">
-              Mobile App Design
+              Realizar Reporte de Ventas
             </p>
           </div>
           <div>
@@ -50,7 +50,7 @@ const TaskCard = () => {
           <div className="flex items-center justify-center gap-2">
             <Checkbox />
             <p className="text-base font-bold text-navy-700 dark:text-white">
-              Dashboard Builder
+              Planificar Reunión con Proveedores
             </p>
           </div>
           <div>
@@ -62,7 +62,7 @@ const TaskCard = () => {
           <div className="flex items-center justify-center gap-2">
             <Checkbox />
             <p className="text-base font-bold text-navy-700 dark:text-white">
-              Landing Page Design
+              Revisar Control de Calidad
             </p>
           </div>
           <div>
@@ -74,7 +74,7 @@ const TaskCard = () => {
           <div className="flex items-center justify-center gap-2">
             <Checkbox />
             <p className="text-base font-bold text-navy-700 dark:text-white">
-              Dashboard Builder
+              Actualizar Precios del Catálogo
             </p>
           </div>
           <div>

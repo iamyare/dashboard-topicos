@@ -4,8 +4,8 @@ type ApexGeneric = ApexOptions & any;
 
 export const barChartDataDailyTraffic = [
   {
-    name: 'Daily Traffic',
-    data: [20, 30, 40, 20, 45, 50, 30],
+    name: 'Clientes por Hora',
+    data: [12, 25, 35, 42, 38, 29, 15],
   },
 ];
 
@@ -106,7 +106,7 @@ export const barChartOptionsDailyTraffic: ApexGeneric = {
 };
 
 export const pieChartOptions: ApexGeneric = {
-  labels: ['Your files', 'System', 'Empty'],
+  labels: ['Frontend', 'Backend', 'Diseño UI/UX'],
   colors: ['#4318FF', '#6AD2FF', '#EFF4FB'],
   chart: {
     width: '50px',
@@ -144,22 +144,22 @@ export const pieChartOptions: ApexGeneric = {
   },
 };
 
-export const pieChartData = [63, 25, 12];
+export const pieChartData = [40, 35, 25];
 
 export const barChartDataWeeklyRevenue = [
   {
-    name: 'PRODUCT A',
-    data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
+    name: 'Ventas en Línea',
+    data: [24500, 22700, 20300, 23900, 19200, 21500, 22600, 19200, 23800],
     color: '#6AD2Fa',
   },
   {
-    name: 'PRODUCT B',
-    data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
+    name: 'Ventas en Tienda',
+    data: [18400, 17700, 15300, 19900, 15200, 17500, 18600, 15200, 19800],
     color: '#4318FF',
   },
   {
-    name: 'PRODUCT C',
-    data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
+    name: 'Servicios',
+    data: [12400, 11700, 10300, 12900, 10200, 11500, 12600, 10200, 12800],
     color: '#EFF4FB',
   },
 ];
@@ -256,13 +256,13 @@ export const barChartOptionsWeeklyRevenue = {
 
 export const lineChartDataTotalSpent = [
   {
-    name: 'Revenue',
-    data: [50, 64, 48, 66, 49, 68],
+    name: 'Ingresos',
+    data: [850000, 964000, 748000, 866000, 749000, 868000],
     color: '#4318FF',
   },
   {
-    name: 'Profit',
-    data: [30, 40, 24, 46, 20, 46],
+    name: 'Ganancias',
+    data: [430000, 540000, 324000, 446000, 320000, 446000],
     color: '#6AD2FF',
   },
 ];
