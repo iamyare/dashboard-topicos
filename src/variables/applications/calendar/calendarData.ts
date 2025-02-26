@@ -11,8 +11,8 @@ export const calendarData: RowObj[] = [
   {
     title: 'Meeting with a client',
     borderColor: 'transparent',
-    start: '2022-09-27',
-    end: '2022-09-29',
+    start: '2025-02-28',
+    end: '2025-03-02',
     backgroundColor: '#7551FF',
     className: 'info',
   },
@@ -20,8 +20,8 @@ export const calendarData: RowObj[] = [
   {
     title: 'Webinar - Marketing for Developers',
     borderColor: 'transparent',
-    start: '2022-10-06',
-    end: '2022-10-08',
+    start: '2025-03-04',
+    end: '2025-03-06',
     backgroundColor: '#01B574',
     className: 'success',
   },
@@ -29,8 +29,8 @@ export const calendarData: RowObj[] = [
   {
     title: 'Design UI and check sales on PayPal',
     borderColor: 'transparent',
-    start: '2022-10-10',
-    end: '2022-10-12',
+    start: '2025-03-08',
+    end: '2025-03-10',
     backgroundColor: '#FFB547',
     className: 'warning',
   },
@@ -38,8 +38,8 @@ export const calendarData: RowObj[] = [
   {
     title: 'Configure table for Daily tasks on Notion',
     borderColor: 'transparent',
-    start: '2022-10-21',
-    end: '2022-10-23',
+    start: '2025-03-12',
+    end: '2025-03-14',
     backgroundColor: '#7551FF',
     className: 'error',
   },
